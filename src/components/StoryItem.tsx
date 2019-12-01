@@ -4,10 +4,13 @@ import {
   TouchableOpacity,
   Text,
   View,
+  Dimensions,
   ActivityIndicator,
   Linking
 } from "react-native";
 import { Story } from "../reducer";
+
+const { width } = Dimensions.get("window");
 
 const StoryItem = ({
   page,
@@ -27,7 +30,9 @@ const StoryItem = ({
       {story ? (
         <TouchableOpacity onPress={() => Linking.openURL(story.url)}>
           <View style={styles.row}>
-            <Text numberOfLines={1}>{story.title}</Text>
+            <Text numberOfLines={1} style={styles.title}>
+              {story.title}
+            </Text>
           </View>
 
           <View style={styles.row}>
@@ -51,13 +56,18 @@ const styles = StyleSheet.create({
   },
 
   mainRow: {
-    margin: 5
+    margin: 5,
+    flex: 1
   },
 
   number: {
     color: "#AAA",
     marginRight: 10,
     width: 30
+  },
+
+  title: {
+    width: width - 50
   },
 
   subtitle: {

@@ -92,6 +92,7 @@ class HomeScreen extends React.Component<Props> {
           refreshing={this.state.refreshing}
           extraData={this.state.page}
           style={styles.list}
+          contentContainerStyle={styles.listContent}
           data={this.getPage(this.state.page)}
           keyExtractor={item => `${item}`}
           renderItem={this.renderItem}
@@ -121,6 +122,7 @@ const styles = StyleSheet.create({
   page: { margin: 10 },
 
   list: {
+    flex: 1,
     backgroundColor: "#f6f6ef",
     height: height - 200
   },

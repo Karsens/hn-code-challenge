@@ -6,7 +6,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest"
+    "test:coverage": "jest",
+    "test:update": "jest --updateSnapshot",
+    "deploy": "expo build:web && surge web-build hncodechallenge.surge.sh"
   },
   "jest": {
     "preset": "jest-expo",

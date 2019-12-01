@@ -8,6 +8,7 @@ exports[`Index runs renders correctly 1`] = `
         "flexDirection": "row",
       },
       Object {
+        "flex": 1,
         "margin": 5,
       },
     ]
@@ -49,6 +50,11 @@ exports[`Index runs renders correctly 1`] = `
     >
       <Text
         numberOfLines={1}
+        style={
+          Object {
+            "width": 700,
+          }
+        }
       >
         Test
       </Text>
