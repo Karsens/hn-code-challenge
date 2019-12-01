@@ -59,7 +59,9 @@ class HomeScreen extends React.Component<Props> {
           <TouchableOpacity
             key={page}
             style={styles.page}
-            onPress={() => this.setState({ page })}
+            onPress={() => {
+              this.setState({ page });
+            }}
           >
             <Text
               style={{
@@ -92,7 +94,6 @@ class HomeScreen extends React.Component<Props> {
           refreshing={this.state.refreshing}
           extraData={this.state.page}
           style={styles.list}
-          contentContainerStyle={styles.listContent}
           data={this.getPage(this.state.page)}
           keyExtractor={item => `${item}`}
           renderItem={this.renderItem}
