@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index runs renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "margin": 5,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#AAA",
+        "marginRight": 10,
+        "width": 30,
+      }
+    }
+  >
+    2
+    .
+  </Text>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+      >
+        Test
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 10,
+          }
+        }
+      >
+        10
+         by 
+        TestUser
+      </Text>
+    </View>
+  </View>
+</View>
+`;
