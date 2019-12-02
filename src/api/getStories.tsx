@@ -1,6 +1,6 @@
 function getStories(dispatch) {
   return () => {
-    fetch("https://hacker-news.firebaseio.com/v0/topstories.json")
+    return fetch("https://hacker-news.firebaseio.com/v0/topstories.json")
       .then(res => res.json())
       .then(res => {
         dispatch({ type: "GET_TOP_STORIES", allStories: res });

@@ -43,16 +43,6 @@ export const reducer = (
       };
     }
 
-    case "PURGE_STORIES": {
-      console.log("purge stories");
-      return {
-        ...state,
-        stories: {
-          stories: []
-        }
-      };
-    }
-
     case "SET_STORY": {
       const stories = state.stories.storiesById || {};
       return {

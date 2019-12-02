@@ -7,6 +7,7 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test:coverage": "jest",
+    "test:watch": "jest --watchAll",
     "test:update": "jest --updateSnapshot",
     "deploy": "expo build:web && surge web-build hncodechallenge.surge.sh"
   },
